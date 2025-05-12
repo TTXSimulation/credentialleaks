@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Leak - ALPHV</title>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #f8f8f2;
+      font-family: monospace;
+      margin: 0;
+      padding: 0 20px;
+    }
+    header {
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 1px solid #444;
+    }
+    h1 {
+      color: #ff5555;
+    }
+    .company {
+      margin: 30px 0;
+      padding: 20px;
+      background-color: #111;
+      border-left: 4px solid #ff5555;
+    }
+    .company h2 {
+      margin-top: 0;
+      color: #f1fa8c;
+    }
+    .pii {
+      background-color: #222;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 0.9em;
+      white-space: pre-wrap;
+    }
+    .countdown {
+      color: #50fa7b;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .download {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 8px 14px;
+      background-color: #ff5555;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .download:hover {
+      background-color: #ff4444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ALPHV / BlackCat Leak Site</h1>
+    <p>Negotiations failed. Confidential data (pre-leak: ~11.4 GB) is being released.</p>
+  </header>
+
+  <section class="company">
+    <h2>casbw.de</h2>
+    <div class="countdown">Data already leaked</div>
+    <a href="casbw_leak.xlsx" class="download">Download: casbw_leak.xlsx (1.8 MB)</a>
+    <div class="pii">
+Affected: 187 credentials<br>
+Users: 10 unique user identities<br>
+Leaks: PII, HR records, credentials, access logs
+    </div>
+  </section>
+
+  <section class="company">
+    <h2>rheinische-compounding.de</h2>
+    <div class="countdown">Data already leaked</div>
+    <a href="rheinische_compounding_leak.xlsx" class="download">Download: rheinische_compounding_leak.xlsx (1.9 MB)</a>
+    <div class="pii">
+187 exposed credentials<br>
+Key Users: Einkauf, IT, Produktion<br>
+Files: formulations.docx, passwords.txt
+    </div>
+  </section>
+
+  <section class="company">
+    <h2>Newco-Pharma.de</h2>
+    <div class="countdown">Data already leaked</div>
+    <a href="newco_pharma_leak.xlsx" class="download">Download: newco_pharma_leak.xlsx (1.7 MB)</a>
+    <div class="pii">
+Unique Users: 10<br>
+Credentials: VPN + Mail + Intranet
+    </div>
+  </section>
+
+  <section class="company">
